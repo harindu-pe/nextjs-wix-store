@@ -6,13 +6,13 @@ const HeaderLogo = () => {
   return (
     <div>
       <div className="w-fit">
-        <div className="flex gap-2 items-center">
+        <div className="flex items-center gap-2">
           <ShoppingCart className="size-6" />
           <Link
             href="/"
-            className="text-lg tracking-wide font-semibold text-nowrap"
+            className="text-nowrap text-lg font-semibold tracking-wide"
           >
-            Wix Store
+            Art Store
           </Link>
         </div>
       </div>

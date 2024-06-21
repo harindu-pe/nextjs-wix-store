@@ -9,17 +9,17 @@ type Props = { navItems: { label: string; href: string }[] };
 
 const Navbar = ({ navItems }: Props) => {
   return (
-    <nav className="hidden sm:flex items-center w-full pl-8">
-      <div className="w-1/2 flex items-center gap-2">
+    <nav className="hidden w-full items-center pl-8 sm:flex">
+      <div className="flex w-1/2 items-center gap-2">
         {navItems.map(({ label, href }) => (
           <div key={label} className="flex items-center">
-            <Button asChild variant="ghost" className="rounded-lg">
+            <Button asChild variant="ghost">
               <Link href={href}>{label}</Link>
             </Button>
           </div>
         ))}
       </div>
-      <div className="w-1/2 flex items-center justify-between gap-8">
+      <div className="flex w-1/2 items-center justify-between gap-2 px-2">
         <HeaderSearch />
         <HeaderCart />
       </div>

@@ -19,9 +19,12 @@ const HeaderSearch = () => {
   };
 
   return (
-    <form className="flex w-full items-center gap-2" onSubmit={handleSearch}>
-      <Input name="name" placeholder="Search" />
-      <Button variant="ghost">
+    <form
+      className="flex w-full items-center gap-1 rounded-lg border"
+      onSubmit={handleSearch}
+    >
+      <Input name="name" className="border-none" placeholder="Search" />
+      <Button variant="ghost" className="">
         <Search />
       </Button>
     </form>
